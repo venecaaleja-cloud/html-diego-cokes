@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Fondo original: un degradado suave y agradable */
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido de la página */
+.contenido-principal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+}
+
+.contenido-principal h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contenido-principal p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* --- ESTILOS DEL BANNER DE COOKIES (Como en la guía) --- */
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+/* Clase para ocultar el banner */
+.oculto {
+    display: none !important;
+}
+
+.cerrar-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icono-cookie {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.cookie-banner p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.aceptar-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.aceptar-btn:hover {
+    background-color: #e0e0e0;
+}
